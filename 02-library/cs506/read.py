@@ -1,6 +1,7 @@
+import numpy as np
 def read_csv(csv_file_path):
-    """
-        Given a path to a csv file, return a matrix (list of lists)
-        in row major.
-    """
-    raise NotImplementedError()
+    
+
+    matrix = np.array(list(loadtxt(open("test.csv", "rb"), delimiter=",", skiprows=1)))
+    
+    return matrix
